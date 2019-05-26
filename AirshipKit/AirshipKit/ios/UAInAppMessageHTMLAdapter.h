@@ -12,7 +12,7 @@
 /**
  * HTML in-app message display style defaults plist name.
  */
-extern NSString *const UAHTMLStyleFileName;
+extern NSString * _Nullable const UAHTMLStyleFileName;
 
 /**
  * HTML in-app message display style.

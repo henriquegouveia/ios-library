@@ -120,7 +120,6 @@
 		4515B6A22134AF1300284CFF /* UAInAppMessageResizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4515B6A12134AF1200284CFF /* UAInAppMessageResizableViewController.m */; };
 		4515B6A42134AF1300284CFF /* UAInAppMessageResizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4515B6A12134AF1200284CFF /* UAInAppMessageResizableViewController.m */; };
 		4515B6AA2134AFC300284CFF /* UAInAppMessageResizableViewController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4515B6A92134AFC200284CFF /* UAInAppMessageResizableViewController+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4515B6AB2134AFC300284CFF /* UAInAppMessageResizableViewController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4515B6A92134AFC200284CFF /* UAInAppMessageResizableViewController+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4515B6B32134B20800284CFF /* UATagGroupsTransactionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4515B6B22134B20800284CFF /* UATagGroupsTransactionRecord.m */; };
 		4515B6B42134B20800284CFF /* UATagGroupsTransactionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4515B6B22134B20800284CFF /* UATagGroupsTransactionRecord.m */; };
 		4515B6B52134B20800284CFF /* UATagGroupsTransactionRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4515B6B22134B20800284CFF /* UATagGroupsTransactionRecord.m */; };
@@ -184,7 +183,6 @@
 		45DCD83C2086AB0D00BCF10F /* UAInAppMessageMediaStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DCD8382086AB0D00BCF10F /* UAInAppMessageMediaStyle.m */; };
 		45DCD83E2087C57C00BCF10F /* UAInAppMessageFullScreenStyleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DCD83D2087C57C00BCF10F /* UAInAppMessageFullScreenStyleTest.m */; };
 		45F0CD3D2124E3B900EED496 /* UAInAppMessageResizableViewController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F0CD3A2124E3B900EED496 /* UAInAppMessageResizableViewController+Internal.h */; };
-		45F0CD3F2124E3B900EED496 /* UAInAppMessageResizableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CD3B2124E3B900EED496 /* UAInAppMessageResizableViewController.m */; };
 		45F0CD422124E58000EED496 /* UAInAppMessageHTMLViewController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F0CD402124E58000EED496 /* UAInAppMessageHTMLViewController+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		45F0CD432124E58000EED496 /* UAInAppMessageHTMLViewController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F0CD402124E58000EED496 /* UAInAppMessageHTMLViewController+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		45F0CD442124E58000EED496 /* UAInAppMessageHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0CD412124E58000EED496 /* UAInAppMessageHTMLViewController.m */; };
@@ -4637,7 +4635,6 @@
 				DF7E22931ED62E0900C79C46 /* NSString+UALocalizationAdditions.h in Headers */,
 				DF7E22941ED62E0900C79C46 /* NSString+UAURLEncoding.h in Headers */,
 				DF7E22951ED62E0900C79C46 /* UIWebView+UAAdditions.h in Headers */,
-				4515B6AB2134AFC300284CFF /* UAInAppMessageResizableViewController+Internal.h in Headers */,
 				DF7E22961ED62E0900C79C46 /* UADisposable.h in Headers */,
 				DF7E22911ED62E0900C79C46 /* UAUtils+Internal.h in Headers */,
 				DF7E22981ED62E0900C79C46 /* NSManagedObjectContext+UAAdditions+Internal.h in Headers */,
@@ -4919,7 +4916,7 @@
 		494DD94E1B0EB677009C134E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Urban Airship";
 				TargetAttributes = {
 					494DD9561B0EB677009C134E = {
@@ -4930,7 +4927,7 @@
 					CC64F0531D8B77E3009CEF27 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PGJV57GD94;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					CC8999761D8B625500A0CECC = {
@@ -4953,6 +4950,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				ar,
 				cs,
@@ -5116,7 +5114,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-AirshipKitTests/Pods-AirshipKitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AirshipKitTests/Pods-AirshipKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
 				"${BUILT_PRODUCTS_DIR}/XcodeEdit/XcodeEdit.framework",
 			);
@@ -5127,7 +5125,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AirshipKitTests/Pods-AirshipKitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirshipKitTests/Pods-AirshipKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF6DD5011E7A1EB8000C281A /* Generate AirshipLib.h */ = {
@@ -5788,7 +5786,6 @@
 				CC40DDA71D8C9A1C00BABD4F /* UATagUtils.m in Sources */,
 				992F898D1EFD99B000E4C8FE /* UARateAppActionPredicate.m in Sources */,
 				45DCD83C2086AB0D00BCF10F /* UAInAppMessageMediaStyle.m in Sources */,
-				45F0CD3F2124E3B900EED496 /* UAInAppMessageResizableViewController.m in Sources */,
 				CC40DDA81D8C9A1C00BABD4F /* UAURLProtocol.m in Sources */,
 				CC40DDA91D8C9A1C00BABD4F /* UAUser.m in Sources */,
 				6E3673DE1E8AE9F7005B5DFF /* UAEnableFeatureAction.m in Sources */,
@@ -6148,10 +6145,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC40DDB31D8CAF7300BABD4F /* AirshipConfig.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -6183,10 +6176,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC40DDB31D8CAF7300BABD4F /* AirshipConfig.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -6236,8 +6225,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.urbanairship.AirshipKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -6261,8 +6249,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.urbanairship.AirshipKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -6344,10 +6331,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC40DDB31D8CAF7300BABD4F /* AirshipConfig.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
@@ -6386,10 +6369,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC40DDB31D8CAF7300BABD4F /* AirshipConfig.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
